@@ -1,0 +1,152 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#logo{
+    width: 120px;
+    height: 120px;
+}
+#nav a{
+    color: rgb(22, 148, 233);
+}
+
+.nav-item:hover{
+    background-color:rgba(0, 153, 255, 0.767) ;
+    
+}
+#nav a:hover{
+    color: rgb(255, 255, 255);
+}
+button:hover{
+    scale: 110%;
+}
+p{
+    text-align: justify;
+}
+span{
+    color: rgb(73, 3, 3);
+    font-weight: bold;
+
+}
+
+#booking button{
+    background-color: rgb(22, 148, 233);
+    width: 10%;
+}
+#carouselExampleCaptions{
+    position: relative;
+}
+#tagline{
+    position: absolute;
+    top: 0%;
+}
+#tagline h1{
+    font-size: 70px;
+    
+}
+#tagline p{
+    font-family: cursive;
+    font-size:60px ;
+   
+}
+#para{
+    text-align: justify;
+}
+#destinations{
+    position: relative;
+    height: 100%;
+}
+#place{
+    position: absolute;
+  bottom: 0;
+    z-index: 10;
+    background-image:linear-gradient(to top,rgb(0, 0, 0),rgba(0, 0, 0, 0)) ;
+}
+#caption{
+ position: absolute;
+ bottom: 0;
+overflow: hidden;
+}
+#caption h2:hover{
+    color: rgb(101, 178, 241);
+}
+#testimonials{
+    height: 22rem;
+}
+#testimonials img{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.stars{
+    color:#FC8F00 ;
+}
+.empty{
+    color: rgb(69, 70, 70);
+   
+}
+#social-icons a{
+    color: black;
+}
+#input{
+    height: 50px;
+}
+#input::placeholder,textarea::placeholder{
+    padding-left: 10px;
+}
+#contact-info i{
+    color: rgb(22, 148, 233);
+    padding-right: 10px;
+}
+#contact{
+    background-color: rgb(63, 143, 196);
+    padding: 10%;
+}
+
+#hotel-booking{
+    background-image: url(https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1325&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+}
+#hotel-form{
+    background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.11),rgba(255, 255, 255, 0.616));
+}
+.footer{
+    position: fixed;
+    z-index: 100;
+    bottom: 0px;
+}
+
+/* animation */
+
+
+
+@keyframes zoomInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(.1) translateX(-2000px);
+    -ms-transform: scale(.1) translateX(-2000px);
+    transform: scale(.1) translateX(-2000px);
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(.475) translateX(48px);
+    -ms-transform: scale(.475) translateX(48px);
+    transform: scale(.475) translateX(48px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+.zoomInLeft {
+   animation: zoomInLeft 2s ;
+  animation-delay: 0.6s;
+}
+
